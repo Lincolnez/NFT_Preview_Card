@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot/Frontend Mentor _ NFT preview card component.png)
+![](./NFT_preview_card_component.png)
 
 
 ### Links
