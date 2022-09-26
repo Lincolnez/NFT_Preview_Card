@@ -1,0 +1,148 @@
+.container__flex {
+   display: flex;
+   box-sizing:inherit;
+   //width: 100vh;
+   height: 95vh;
+   
+   flex-direction: column;
+   //flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+
+
+   @include breakpoint-up (large) {
+      margin: auto;
+   }
+
+   @include breakpoint-down (medium) {
+      margin: auto;
+   }
+ 
+}
+
+.container {
+
+   background-color: $darkBlueCardBg;
+   
+   width: 17.75rem;
+   //height: 31.4375rem;
+   border-radius: 10px;
+   box-shadow: 10px 30px 10px  #041228, 
+               -10px 30px 10px #041228, 
+                0px -5px 10px  #041228,  
+                0px 0px 10px 20px #041228,
+                0px 0px 15px 20px  #041228;
+   align-self: center;
+
+     
+   &__gemimage {
+      width: 17.375rem;
+      height: 17.563rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-radius: 8px;
+   }
+
+   &__overlay {
+      position: relative;
+      height: 100%;
+      left:0;
+      top:0;
+      border-radius:8px ;
+      background-color: $cyan;
+      opacity: 0; 
+
+      & img {
+         position: relative;
+         top: 40%;
+         left: 41%;
+      }   
+   }
+   
+   &__equili {
+      font-size: 1.25rem;
+      color: $white;
+      margin:29px 0 21px 0;
+      font-weight: 400;
+
+      & :hover {
+         color: $cyan;
+      }
+   }
+
+   &__paragraph {
+      font-size: 1rem;
+      font-weight: 100;
+      color: $softBlue;
+      line-height: 1.5rem;
+   }
+}
+
+.eth_flex {
+   display: flex;
+   margin-top: 1.375rem;
+   margin-bottom: 1.125rem;
+   border-bottom: 0.3px solid $softBlue;
+   padding-bottom: 1rem;
+   justify-content: space-between;
+
+}
+.eth_icon{
+   align-items: baseline;
+   font-size: 1rem;
+   font-weight: 400;
+   color: $cyan;
+}
+
+.clock_icon{
+   align-items: baseline;
+   font-size: 1rem;
+   font-weight: 100;
+   color: $softBlue;
+}
+
+.avatar {
+   display: flex;
+   gap: 1.1rem;
+   
+   
+   &__wrapper{
+      height: 2.186rem;
+      border: 1px solid $white;
+      border-radius: 50%;
+   }
+}
+
+.avatar > p {
+   font-size: 1.0rem;
+   color: $softBlue;
+   margin: 0;
+   padding-top: 8px;
+   
+
+   & > a {
+      color: $white;
+   }
+   & > a:hover {
+      cursor: pointer;
+      color: $cyan;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
